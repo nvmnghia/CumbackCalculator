@@ -17,6 +17,10 @@ public class ExpressionList {
         currentExpression += str;
     }
 
+    public static void writeToExpression(int str) {
+        currentExpression += str;
+    }
+
     public static String evaluate() {
         return null;
     }

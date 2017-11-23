@@ -13,18 +13,33 @@
     grid:rowCount="7">
 
     <TextView
-        android:id="@+id/result_view"
+        android:id="@+id/formula_bar"
+
         android:layout_width="match_parent"
-        android:layout_margin="0dp"
+        grid:layout_columnSpan="4"
+        grid:layout_rowWeight="1.2"
 
         android:background="@drawable/result_view"
+        android:gravity="right|center_vertical"
 
-        android:padding="0dp"
+        android:textColor="@color/white_formula"
+        android:maxLines="2"/>
+
+    <TextView
+        android:id="@+id/result_view"
+
+        android:layout_width="match_parent"
         grid:layout_columnSpan="4"
-        grid:layout_rowWeight="3" />
+        grid:layout_rowWeight="1.5"
+
+        android:background="@drawable/result_view"
+        android:gravity="right"
+
+        android:textColor="@color/white_result"
+        android:maxLines="1"/>
 
     <Button
-        android:id="@+id/btn_ac"
+        android:id="@+id/btn_clear"
 
         android:layout_width="0dp"
         android:layout_height="0dp"
